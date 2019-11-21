@@ -10,15 +10,17 @@
 
 
 
+------
+
 ### getStyle()
 
 这个方法是用来兼容IE8及以下浏览器的获取元素样式的方法
 
 参数：
 
- 	\* obj: 获取样式的对象
+ 	obj: 获取样式的对象
 
-​	 \* name： 获取样式的样式名
+​	 name： 获取样式的样式名
 
 调用方法：直接调用即可
 
@@ -34,23 +36,24 @@ getStyle(obj,name)
 
 参数：
 
-​	 \* 1.obj: 动画执行的对象
+​	 1.obj: 动画执行的对象
 
-​	 \* 2.attr: 执行动画的样式 (可选值：top / left / width / height)
+​	 2.attr: 执行动画的样式 (可选值：top / left / width / height)
 
-​				top: 上下移动
+> top: 上下移动
+>
+> left: 左右移动
+>
+> width: 改变宽度
+>
+> height: 改变高度
+>
 
-​				left: 左右移动
+ 	3.target: 动画执行的目标位置
 
-​				width: 改变宽度
+​	 4.speed: 移动速度
 
-​				height: 改变高度
-
- 	\* 3.target: 动画执行的目标位置
-
-​	 \* 4.speed: 移动速度
-
-​	 \* 5.callback: 回调函数，在动画执行完毕后执行（该参数可传可不传）
+​	5.callback: 回调函数，在动画执行完毕后执行（该参数可传可不传）
 
 调用方法：
 
@@ -62,6 +65,80 @@ move(obj, attr, target, speed)
 
 //有回调函数
 move(obj, attr, target, speed , callback)
+```
+
+------
+
+下面4个方法都是用于js操作元素class属性来改变元素样式的。
+
+### hasClass()
+
+该函数用于判断一个元素中是否含有指定的class属性值
+
+参数：
+
+​     obj: 要判断class属性的元素对象
+
+​     cName: 要判断的class属性值
+
+调用：
+
+```javascript
+hasClass(obj,cName)
+```
+
+
+
+### addClass()
+
+该函数用于向一个元素中添加指定的class属性
+
+参数：
+
+​     obj: 要添加class属性的元素对象
+
+​     cName: 要添加的class属性值
+
+调用：
+
+```javascript
+addClass(obj,cName)
+```
+
+
+
+### removeClass()
+
+该函数用于移除元素中指定的class属性值
+
+参数：
+
+​     obj: 要移除class属性的元素对象
+
+​     cName: 要移除的class属性值
+
+调用：
+
+```javascript
+removeClass(obj,cName)
+```
+
+
+
+### toggleClass()
+
+该函数用于切换元素中指定的class属性值，有则移除，无则添加
+
+参数：
+
+​     obj: 要切换class属性的元素对象
+
+​     cName: 要切换的class属性值
+
+调用：
+
+```javascript
+toggleClass(obj,cName)
 ```
 
 ------
