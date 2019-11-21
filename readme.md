@@ -18,9 +18,10 @@
 
 参数：
 
- 	obj: 获取样式的对象
+- obj: 获取样式的对象
 
-​	 name： 获取样式的样式名
+- name： 获取样式的样式名
+
 
 调用方法：直接调用即可
 
@@ -36,9 +37,10 @@ getStyle(obj,name)
 
 参数：
 
-​	 1.obj: 动画执行的对象
+- obj: 动画执行的对象
 
-​	 2.attr: 执行动画的样式 (可选值：top / left / width / height)
+- attr: 执行动画的样式 (可选值：top / left / width / height)
+
 
 > top: 上下移动
 >
@@ -49,11 +51,12 @@ getStyle(obj,name)
 > height: 改变高度
 >
 
- 	3.target: 动画执行的目标位置
+- target: 动画执行的目标位置
 
-​	 4.speed: 移动速度
+- speed: 移动速度
 
-​	5.callback: 回调函数，在动画执行完毕后执行（该参数可传可不传）
+- callback: 回调函数，在动画执行完毕后执行（该参数可传可不传）
+
 
 调用方法：
 
@@ -77,9 +80,10 @@ move(obj, attr, target, speed , callback)
 
 参数：
 
-​     obj: 要判断class属性的元素对象
+-  obj: 要判断class属性的元素对象
 
-​     cName: 要判断的class属性值
+- cName: 要判断的class属性值
+
 
 调用：
 
@@ -95,9 +99,10 @@ hasClass(obj,cName)
 
 参数：
 
-​     obj: 要添加class属性的元素对象
+- obj: 要添加class属性的元素对象
 
-​     cName: 要添加的class属性值
+- cName: 要添加的class属性值
+
 
 调用：
 
@@ -113,9 +118,10 @@ addClass(obj,cName)
 
 参数：
 
-​     obj: 要移除class属性的元素对象
+- obj: 要移除class属性的元素对象
 
-​     cName: 要移除的class属性值
+- cName: 要移除的class属性值
+
 
 调用：
 
@@ -131,9 +137,10 @@ removeClass(obj,cName)
 
 参数：
 
-​     obj: 要切换class属性的元素对象
+- obj: 要切换class属性的元素对象
 
-​     cName: 要切换的class属性值
+- cName: 要切换的class属性值
+
 
 调用：
 
